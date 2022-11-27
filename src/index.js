@@ -21,7 +21,7 @@ root.render(
     <React.StrictMode>
         <BrowserRouter>
             <ThemeProvider theme={theme}>
-                <App />
+                <App msalInstance={pca}/>
             </ThemeProvider>
         </BrowserRouter>
     </React.StrictMode>

@@ -6,13 +6,17 @@ import { Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Profile } from "./pages/Profile";
 
-function App() {
+import { MsalProvider } from "@azure/msal-react"
+
+function App({ msalInstance }) {
     return (
-        <PageLayout>
-            <Grid container justifyContent="center">
-                <Pages />
-            </Grid>
-        </PageLayout>
+        <MsalProvider instance={ msalInstance }>
+            <PageLayout>
+                <Grid container justifyContent="center">
+                    <Pages />
+                </Grid>
+            </PageLayout>
+        </MsalProvider>
     );
 }
 
