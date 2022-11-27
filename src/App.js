@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import Grid from "@mui/material/Grid";
 import { PageLayout } from "./components/PageLayout";
 import { Routes, Route } from "react-router-dom";

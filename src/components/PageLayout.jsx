@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import Typography from "@mui/material/Typography";
 import NavBar from "./NavBar";
 

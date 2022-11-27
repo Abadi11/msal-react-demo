@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import { ProfileData } from "../components/ProfileData";
 
 export const Profile = () => {
