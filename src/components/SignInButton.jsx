@@ -5,6 +5,8 @@ import { useMsal } from '@azure/msal-react';
 export const SignInButton = () => {
     const { instance } = useMsal();
 
+    console.log(instance)
+
     const handleSignIn = () => {
         instance.loginRedirect({
             scopes: ['user.read']
