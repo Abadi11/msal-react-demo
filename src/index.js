@@ -14,7 +14,9 @@ const pca = new PublicClientApplication({
     auth: {
         clientId: '784e585f-2ddb-49d1-a710-9a3343bb3a47',
         authority: 'https://login.microsoftonline.com/5a380cd7-791e-4b4c-aa94-ee0574864ac8',
-        redirectUri: '/'
+        redirectUri: '/',
+        postLogoutRedirectUri: '/',
+        clientCapabilities: ['CP1']
     },
     caches:{
         cacheLocation: 'localStorage',

@@ -9,7 +9,10 @@ import { fetchData } from '../fetch';
 export const Profile = () => {
     const [ graphData, setGraphData ] = useState(null);
     const { result, error } = useMsalAuthentication(InteractionType.Popup, {
-        scopes: ["user.read"]
+        scopes: ["user.read"],
+        claims: sessionStorage.getItem('claimsChallenge')
+            ? window.atob(sessionStorage.getItem('claimsChallenge')) : undefined
+            
     })
 
     useEffect(() => {
